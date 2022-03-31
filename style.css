@@ -145,6 +145,16 @@ ul > li div :after {
   transition: all 0.5s;
 }
 
+/*---------------------------
+PRINCIPAL + CARROUSEL
+---------------------------*/
+#carouselExampleControls {
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+}
+
 .carrousel div {
   background-image: url("carrousel1.png");
   min-height: 100vh;
