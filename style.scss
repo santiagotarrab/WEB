@@ -93,23 +93,23 @@ ul {
                 text-transform: uppercase;
             }
 
-            :hover {
+            &:hover {
                 *{
                 color: rgb(253, 201, 28);           
                 transition: all 0.3s;
                 }
 
-                :before {
+                &:before {
                     width:100%;
                 }
 
-                :after {
+                &:after {
                     width:100%;
                 }
             }
          
 
-            :before {
+            &:before {
                 content:"";
                 position:absolute;
                 bottom:0px;
@@ -120,7 +120,7 @@ ul {
              
             }
 
-            :after {
+            &:after {
                 content:"";
                 position:absolute;
                 top:0px;

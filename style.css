@@ -108,21 +108,21 @@ ul > li div * {
   text-transform: uppercase;
 }
 
-ul > li div :hover * {
+ul > li div:hover * {
   color: #fdc91c;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-ul > li div :hover :before {
+ul > li div:hover:before {
   width: 100%;
 }
 
-ul > li div :hover :after {
+ul > li div:hover:after {
   width: 100%;
 }
 
-ul > li div :before {
+ul > li div:before {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -133,7 +133,7 @@ ul > li div :before {
   transition: all 0.5s;
 }
 
-ul > li div :after {
+ul > li div:after {
   content: "";
   position: absolute;
   top: 0px;
