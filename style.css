@@ -148,42 +148,35 @@ ul > li div:after {
 /*---------------------------
 PRINCIPAL + CARROUSEL
 ---------------------------*/
-#carouselExampleControls {
-  height: 500px;
-  width: 100%;
-  overflow: hidden;
-  background-size: cover;
-}
-
-.carrousel div {
-  background-image: url("carrousel1.png");
-  min-height: 100vh;
-  height: 100%;
-  width: 100%;
+#index .container__carousel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  width: 100%;
+  height: 400px;
 }
 
-.carrousel h1, .carrousel h2 {
-  text-align: center;
-  color: rgba(219, 214, 214, 0.712);
+#index .container__carousel #carouselExample {
+  width: 90%;
+}
+
+#index .container__carousel #carouselExample .carousel-inner > .carousel-item > img, #index .container__carousel #carouselExample .carousel-inner > .carousel-item > a > img {
+  height: 65vh;
+  min-height: 400px;
+  width: 100%;
+  margin: 0 auto;
+  background: no-repeat center center scroll;
+  background-size: cover;
 }
 
 #nosotros {
   background-color: rgba(19, 133, 15, 0.473);
 }
 
-.nosotros__container {
+#nosotros .nosotros__container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -204,7 +197,7 @@ PRINCIPAL + CARROUSEL
           align-items: center;
 }
 
-.nosotros__containerdiv:nth-of-type(odd) {
+#nosotros .nosotros__container > div:nth-of-type(odd) * {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -217,12 +210,61 @@ PRINCIPAL + CARROUSEL
           align-items: center;
 }
 
-.nosotros__container__text {
+#nosotros .nosotros__container__text {
   width: 70%;
   padding: 0px 100px;
 }
 
-.nosotros__container__img {
+#nosotros .nosotros__container__img {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+#servicios {
+  background-color: white;
+}
+
+#servicios .servicios__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#servicios .servicios__container > div:nth-of-type(odd) * {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#servicios .servicios__container__text {
+  width: 70%;
+  padding: 0px 100px;
+}
+
+#servicios .servicios__container__img {
   width: 200px;
   height: 200px;
   overflow: hidden;
@@ -245,6 +287,12 @@ PRINCIPAL + CARROUSEL
   background-repeat: no-repeat;
 }
 
+@media (max-width: 670px) {
+  .contacto__container__carrousel {
+    width: 0%;
+  }
+}
+
 .contacto__container__form {
   width: 50%;
   height: 100%;
@@ -259,6 +307,12 @@ PRINCIPAL + CARROUSEL
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   overflow: auto;
+}
+
+@media (max-width: 670px) {
+  .contacto__container__form {
+    width: 100%;
+  }
 }
 
 input {
@@ -307,6 +361,14 @@ PROYECTOS
   color: white;
   font-size: 16px;
   text-align: center;
+}
+
+@media (max-width: 670px) {
+  #proyectos {
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "A A A" "B B B" "C C C" "D D D" "E E E";
+  }
 }
 
 #proyectos > div {
@@ -436,11 +498,6 @@ MEDIA + TRANSITIONS
   .nosotros__container__img, .nosotros__container__text {
     width: 100%;
     padding: 30 px;
-  }
-  #proyectos {
-    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "A A A" "B B B" "C C C" "D D D" "E E E";
   }
 }
 

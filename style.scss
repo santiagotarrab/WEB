@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+$responsive_condition : "max-width: 670px";
 /* 
 ---------------------------
 GENERALES
@@ -141,73 +141,113 @@ ul {
 /*---------------------------
 PRINCIPAL + CARROUSEL
 ---------------------------*/
-#carouselExampleControls{
-    height: 500px;
-    width: 100%;
-    overflow: hidden;
-    background-size: cover;
-    }
-    
+
+$carousel-control-color:             white;
+$carousel-control-width:             15%;
+$carousel-control-opacity:           0.5;
+$carousel-control-hover-opacity:     0.9;
 
 
-.carrousel {
-    
-    div {
-    background-image: url("carrousel1.png");
-    min-height: 100vh;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    }
-
-    h1,h2{
-    text-align: center;
-    color: rgba(219, 214, 214, 0.712);
-    }
-}
-
-#nosotros {
-    background-color: rgba(19, 133, 15, 0.473);
-
-
-}
-
-.nosotros{
-    &__container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 100px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    
-
-    &div:nth-of-type(odd) {
-        flex-direction: row-reverse;
-        justify-content: right;
-        align-items: center;
-    }
-
-    
-
-        &__text {
-        width: 70%;
-        padding: 0px 100px;
-        }
+#index{
+    .container__carousel{
+        display: flex;
+        justify-content: center;
+      
+        width: 100%;
+        height: 400px;
         
-        &__img {
-            width: 200px;
-            height: 200px;
-            overflow: hidden;
+        #carouselExample{
+            width: 90%;
+            .carousel-inner>.carousel-item>img, .carousel-inner>.carousel-item>a>img {
+                height: 65vh;
+                min-height: 400px;
+                width: 100%;
+                margin: 0 auto;
+                background: no-repeat center center scroll;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                }
+        
         }
     
-}}
+    }
+}
 
+
+    
+
+
+#nosotros
+    {
+    background-color: rgba(19, 133, 15, 0.473);
+        .nosotros{
+        &__container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+
+            >div:nth-of-type(odd) * {
+            flex-direction: row-reverse;
+            justify-content: right;
+            align-items: center;
+            }
+
+                &__text {
+                width: 70%;
+                padding: 0px 100px;
+                }
+                
+                &__img {
+                    width: 200px;
+                    height: 200px;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
+    #servicios
+    {
+    background-color: rgb(255, 255, 255);
+        .servicios{
+        &__container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+
+            >div:nth-of-type(odd) * {
+            flex-direction: row-reverse;
+            justify-content: right;
+            align-items: center;
+            }
+
+                &__text {
+                width: 70%;
+                padding: 0px 100px;
+                }
+                
+                &__img {
+                    width: 200px;
+                    height: 200px;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
 
 .contacto{
     &__container {
@@ -222,6 +262,10 @@ PRINCIPAL + CARROUSEL
             background-image: url("nosotros1.png");
             background-size: cover;
             background-repeat: no-repeat;
+
+            @media ($responsive_condition){
+                width: 0%;
+            }
         }
 
         &__form{
@@ -234,6 +278,9 @@ PRINCIPAL + CARROUSEL
             flex-direction: column;
             flex-wrap: nowrap;
             overflow: auto;
+            @media ($responsive_condition){
+                width: 100%;
+            }
         }
     }
 }
@@ -284,6 +331,18 @@ PROYECTOS
     color: rgb(255, 255, 255);
     font-size: 16px;
     text-align: center;
+
+    @media($responsive_condition) {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "A A A"
+            "B B B"
+            "C C C"
+            "D D D"
+            "E E E"
+        ;
+    }
+
 
     &>div{
         position: relative;
@@ -380,7 +439,7 @@ footer p {
 MEDIA + TRANSITIONS
 ---------------------------*/
 
-@media (max-width: 670px) {
+@media ($responsive_condition) {
     .nav ul {
         flex-direction: column;
         align-items: center;
@@ -401,16 +460,7 @@ MEDIA + TRANSITIONS
         padding: 30 px;
     }
 
-    #proyectos {
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-            "A A A"
-            "B B B"
-            "C C C"
-            "D D D"
-            "E E E"
-        ;
-    }
+    
 }
 
 
@@ -468,4 +518,3 @@ MEDIA + TRANSITIONS
         height: 60px;
     }
 }
-
