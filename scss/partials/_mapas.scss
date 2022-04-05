@@ -1,0 +1,8 @@
+$dispalaya:(
+        color: blue,
+        vardos:yellow,
+        );
+    
+.pruebamap{ color: map-get($dispalaya,vardos);
+    }
+

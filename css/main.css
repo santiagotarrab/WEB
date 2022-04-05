@@ -1,4 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.pruebamixin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.pruebafunciones {
+  color: #fafa00;
+}
+
+.pruebaoperadores {
+  height: 500;
+}
+
+.pruebamap {
+  color: yellow;
+}
+
+.navbar2 {
+  color: blue;
+  display: block;
+}
+
+.navbar2 {
+  color: blue;
+}
+
+.navbar2 {
+  color: blue;
+  display: block;
+}
+
+.navbar2 {
+  color: blue;
+}
+
 /* 
 ---------------------------
 GENERALES
@@ -271,12 +312,12 @@ PRINCIPAL + CARROUSEL
 .contacto__container__carrousel {
   width: 50%;
   height: 100%;
-  background-image: url("nosotros1.png");
+  background-image: url("/img/nosotros1.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-@media (max-width: 670px) {
+@media (max-width: 671px) {
   .contacto__container__carrousel {
     width: 0%;
   }
@@ -298,7 +339,7 @@ PRINCIPAL + CARROUSEL
   overflow: auto;
 }
 
-@media (max-width: 670px) {
+@media (max-width: 671px) {
   .contacto__container__form {
     width: 100%;
   }
@@ -352,7 +393,7 @@ PROYECTOS
   text-align: center;
 }
 
-@media (max-width: 670px) {
+@media (max-width: 671px) {
   #proyectos {
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -414,7 +455,7 @@ PROYECTOS
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: A;
-  background-image: url(nosotros1.png);
+  background-image: url(/img/nosotros1.png);
 }
 
 .proyectos__grid-b {
@@ -422,7 +463,7 @@ PROYECTOS
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: B;
-  background-image: url(nosotros2.png);
+  background-image: url(/img/nosotros2.png);
 }
 
 .proyectos__grid-c {
@@ -430,14 +471,14 @@ PROYECTOS
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   grid-area: C;
-  background-image: url(nosotros3.png);
+  background-image: url(/img/nosotros3.png);
 }
 
 .proyectos__grid-d {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: D;
-  background-image: url(nosotros4.png);
+  background-image: url(/img/nosotros4.png);
 }
 
 .proyectos__grid-e {
@@ -445,7 +486,7 @@ PROYECTOS
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: E;
-  background-image: url(nosotros1.png);
+  background-image: url(/img/nosotros1.png);
 }
 
 /*--------------------------
@@ -463,7 +504,7 @@ footer p {
 /* ---------------------------
 MEDIA + TRANSITIONS
 ---------------------------*/
-@media (max-width: 670px) {
+@media (max-width: 671px) {
   .nav ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -574,4 +615,4 @@ MEDIA + TRANSITIONS
     height: 60px;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

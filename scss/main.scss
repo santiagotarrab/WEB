@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-$responsive_condition : "max-width: 670px";
+@import "./partials/variables";
+@import "./partials/funciones";
+@import "./partials/operadores";
+@import "./partials/header";
+@import "./partials/mapas.scss";
+@import "./partials/extend.scss";
+@import "./partials/extend.scss";
+
+
+$responsive_condition : "max-width: 671px";
 /* 
 ---------------------------
 GENERALES
@@ -41,8 +50,6 @@ header {
     z-index: 10;
     position: sticky;
     top:0px;
-
-
 }
 
 .nav {
@@ -243,7 +250,7 @@ $carousel-control-hover-opacity:     0.9;
         &__carrousel{
             width: 50%;
             height: 100%;
-            background-image: url("nosotros1.png");
+            background-image: url("/img/nosotros1.png");
             background-size: cover;
             background-repeat: no-repeat;
 
@@ -375,27 +382,27 @@ PROYECTOS
 .proyectos{
     &__grid-a {
     grid-area: A;
-    background-image: url(nosotros1.png);
+    background-image: url(/img/nosotros1.png);
     }
 
     &__grid-b {
         grid-area: B;
-        background-image: url(nosotros2.png);
+        background-image: url(/img/nosotros2.png);
     }
 
     &__grid-c {
         grid-area: C;
-        background-image: url(nosotros3.png);
+        background-image: url(/img/nosotros3.png);
     }
 
     &__grid-d {
         grid-area: D;
-        background-image: url(nosotros4.png);
+        background-image: url(/img/nosotros4.png);
     }
 
     &__grid-e {
         grid-area: E;
-        background-image: url(nosotros1.png);
+        background-image: url(/img/nosotros1.png);
     }
 }
 

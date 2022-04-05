@@ -1,0 +1,10 @@
+%flex{    
+    color:blue;
+    display: block;
+}
+
+.navbar2{   //hereda las propiedades del %extendFlex
+    @extend %flex;
+    color:blue;
+    
+}

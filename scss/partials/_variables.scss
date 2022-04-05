@@ -1,0 +1,11 @@
+$color: blue;
+
+@mixin flex($display,$horizontal,$vertical){   //mixin es como una función que toma variables
+    display: $display;
+    justify-content: $horizontal;
+    align-content: $vertical;
+}
+
+.pruebamixin {
+    @include flex(flex,center,center);    //el include llama a la "función"
+}
