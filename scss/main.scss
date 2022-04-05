@@ -382,27 +382,27 @@ PROYECTOS
 .proyectos{
     &__grid-a {
     grid-area: A;
-    background-image: url(../img/nosotros1.png);
+    background-image: url("../img/nosotros1.png");
     }
 
     &__grid-b {
         grid-area: B;
-        background-image: url(../img/nosotros2.png);
+        background-image: url("../img/nosotros2.png");
     }
 
     &__grid-c {
         grid-area: C;
-        background-image: url(../img/nosotros3.png);
+        background-image: url("../img/nosotros3.png");
     }
 
     &__grid-d {
         grid-area: D;
-        background-image: url(../img/nosotros4.png);
+        background-image: url("../img/nosotros4.png");
     }
 
     &__grid-e {
         grid-area: E;
-        background-image: url(../img/nosotros1.png);
+        background-image: url("../img/nosotros1.png");
     }
 }
 
