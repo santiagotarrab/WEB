@@ -235,6 +235,12 @@ PRINCIPAL + CARROUSEL
   padding: 0px 100px;
 }
 
+@media (max-width: 671px) {
+  #nosotros .nosotros__container__text {
+    padding: 0px;
+  }
+}
+
 #nosotros .nosotros__container__img {
   width: 200px;
   height: 200px;
@@ -281,6 +287,12 @@ PRINCIPAL + CARROUSEL
 #servicios .servicios__container__text {
   width: 70%;
   padding: 0px 100px;
+}
+
+@media (max-width: 671px) {
+  #servicios .servicios__container__text {
+    padding: 0px;
+  }
 }
 
 #servicios .servicios__container__img {

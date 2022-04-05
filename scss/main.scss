@@ -8,7 +8,7 @@
 
 
 
-$responsive_condition : "max-width: 671px";
+
 /* 
 ---------------------------
 GENERALES
@@ -177,6 +177,9 @@ $carousel-control-hover-opacity:     0.9;
                 &__text {
                 width: 70%;
                 padding: 0px 100px;
+                    @media($responsive_condition){
+                        padding:0px;
+                    }
                 }
                 
                 &__img {
@@ -206,6 +209,9 @@ $carousel-control-hover-opacity:     0.9;
                 &__text {
                 width: 70%;
                 padding: 0px 100px;
+                    @media($responsive_condition){
+                        padding:0px;
+                    }
                 }
                 
                 &__img {
