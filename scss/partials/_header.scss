@@ -1,7 +1,8 @@
+@import "./mapas";
+
 /*---------------------------
 HEADER+ NAVBAR 
 ---------------------------*/
-
 
 header {
     background:linear-gradient(90deg, map-get($coloresHeader,color1) map-get($coloresHeader,porc1), map-get($coloresHeader,color2) map-get($coloresHeader,porc2), map-get($coloresHeader,color3) map-get($coloresHeader,porc3));

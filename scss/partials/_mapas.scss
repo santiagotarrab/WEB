@@ -9,5 +9,5 @@ $coloresHeader:(
     
 
 .prueba{
-        color:map-get($coloresHeader , color1 )
+        color:map-get($coloresHeader , color1 );
 }
