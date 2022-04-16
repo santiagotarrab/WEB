@@ -244,7 +244,7 @@ CONTACTO
 .contacto__container__carrousel {
     width: 50%;
     height: 100%;
-    background-image: url("nosotros1.png");
+    background-image: url("nosotros1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -329,27 +329,27 @@ PROYECTOS
 
 .proyectos__grid-a {
     grid-area: A;
-    background-image: url(nosotros1.png);
+    background-image: url(nosotros1.jpg);
 }
 
 .proyectos__grid-b {
     grid-area: B;
-    background-image: url(nosotros2.png);
+    background-image: url(nosotros2.jpg);
 }
 
 .proyectos__grid-c {
     grid-area: C;
-    background-image: url(nosotros3.png);
+    background-image: url(nosotros3.jpg);
 }
 
 .proyectos__grid-d {
     grid-area: D;
-    background-image: url(nosotros4.png);
+    background-image: url(nosotros4.jpg);
 }
 
 .proyectos__grid-e {
     grid-area: E;
-    background-image: url(nosotros1.png);
+    background-image: url(nosotros1.jpg);
 }
 
 
