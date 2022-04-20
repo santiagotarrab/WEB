@@ -5,15 +5,18 @@ HEADER+ NAVBAR
 ---------------------------*/
 
 header {
-    background:linear-gradient(90deg, map-get($coloresHeader,color1) map-get($coloresHeader,porc1), map-get($coloresHeader,color2) map-get($coloresHeader,porc2), map-get($coloresHeader,color3) map-get($coloresHeader,porc3));
 
+    background:linear-gradient(90deg, map-get($coloresHeader,color1) map-get($coloresHeader,porc1), map-get($coloresHeader,color2) map-get($coloresHeader,porc2), map-get($coloresHeader,color3) map-get($coloresHeader,porc3));
+   
     width: 100%;
     z-index: 10;
-    position: sticky;
+    position: fixed;
     top:0px;
+    
 }
 
 .nav {
+    
     @extend %fullSize;
     @include flex(flex,row,center,center,nowrap);
     align-items: flex-end ;

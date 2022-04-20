@@ -19,8 +19,7 @@ header {
   background: linear-gradient(90deg, #129a32 3%, #5eac2a 60%, #3cd80d 100%);
   width: 100%;
   z-index: 10;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0px;
 }
 
@@ -155,6 +154,7 @@ ul > li > div:after {
 }
 
 #nosotros {
+  scroll-margin-top: 7em;
   background-color: rgba(255, 255, 255, 0.473);
 }
 
@@ -221,6 +221,7 @@ ul > li > div:after {
 }
 
 #servicios {
+  scroll-margin-top: 7em;
   background-color: rgba(223, 226, 12, 0.616);
 }
 
@@ -274,7 +275,11 @@ ul > li > div:after {
   overflow: hidden;
 }
 
-.contacto__container {
+#contacto {
+  scroll-margin-top: 7em;
+}
+
+#contacto .contacto__container {
   width: 100%;
   height: 500px;
   display: -webkit-box;
@@ -283,7 +288,7 @@ ul > li > div:after {
   margin: 20px 0px;
 }
 
-.contacto__container__carrousel {
+#contacto .contacto__container__carrousel {
   width: 50%;
   height: 100%;
   background-image: url("../img/nosotros1.jpg");
@@ -292,12 +297,12 @@ ul > li > div:after {
 }
 
 @media (max-width: 671px) {
-  .contacto__container__carrousel {
+  #contacto .contacto__container__carrousel {
     width: 0%;
   }
 }
 
-.contacto__container__form {
+#contacto .contacto__container__form {
   width: 50%;
   height: 100%;
   border: solid black;
@@ -321,12 +326,12 @@ ul > li > div:after {
 }
 
 @media (max-width: 671px) {
-  .contacto__container__form {
+  #contacto .contacto__container__form {
     width: 100%;
   }
 }
 
-input {
+#contacto input {
   width: 100%;
   padding: 12px 20px;
   margin: 10px 0px;
@@ -337,7 +342,7 @@ input {
           box-sizing: border-box;
 }
 
-input[type=submit] {
+#contacto input[type=submit] {
   width: 100%;
   background-color: #4CAF50;
   color: white;
@@ -348,7 +353,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+#contacto input[type=submit]:hover {
   background-color: #45a049;
 }
 
