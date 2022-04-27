@@ -15,8 +15,7 @@
 HEADER+ NAVBAR 
 ---------------------------*/
 header {
-  background: -webkit-gradient(linear, left top, right top, color-stop(3%, #129a32), color-stop(60%, #5eac2a), to(#3cd80d));
-  background: linear-gradient(90deg, #129a32 3%, #5eac2a 60%, #3cd80d 100%);
+  background-color: black;
   width: 100%;
   z-index: 10;
   position: fixed;
@@ -52,8 +51,8 @@ header {
 }
 
 #logo {
-  width: 70px;
-  height: 70px;
+  width: 150px;
+  height: 50px;
 }
 
 ul {
@@ -90,6 +89,7 @@ ul {
 }
 
 ul > li {
+  color: black;
   list-style: none;
   padding: 10px;
   font-size: 14px;
@@ -108,7 +108,7 @@ ul > li > div * {
 }
 
 ul > li > div:hover * {
-  color: #fdc91c;
+  color: #00C2CB;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -127,7 +127,7 @@ ul > li > div:before {
   bottom: 0px;
   width: 0%;
   height: 1px;
-  background-color: #fdc91c;
+  background-color: #00C2CB;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -139,7 +139,7 @@ ul > li > div:after {
   right: 0px;
   width: 0%;
   height: 1px;
-  background-color: #fdc91c;
+  background-color: #00C2CB;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -155,7 +155,7 @@ ul > li > div:after {
 
 #nosotros {
   scroll-margin-top: 7em;
-  background-color: rgba(255, 255, 255, 0.473);
+  background-color: #00c2cb9d;
 }
 
 #nosotros .nosotros__container {
@@ -222,7 +222,7 @@ ul > li > div:after {
 
 #servicios {
   scroll-margin-top: 7em;
-  background-color: rgba(223, 226, 12, 0.616);
+  background-color: white;
 }
 
 #servicios .servicios__container {
@@ -306,7 +306,7 @@ ul > li > div:after {
   width: 50%;
   height: 100%;
   border: solid black;
-  background-color: rgba(18, 154, 50, 0.1);
+  background-color: #00c1cb56;
   padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,8 +344,8 @@ ul > li > div:after {
 
 #contacto input[type=submit] {
   width: 100%;
-  background-color: #4CAF50;
-  color: white;
+  background-color: #E11060;
+  color: black;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
