@@ -82,7 +82,7 @@ background-color: white;
     &__container {
         
     width: 100%;
-    height: 500px;
+    height: 600px;
     display: flex;
     margin: 20px 0px;
     
@@ -125,7 +125,7 @@ input {
 
     &[type=submit] {
         width: 100%;
-        background-color: #E11060;
+        background-color: $color_marca_1;
         color:black;
         padding: 14px 20px;
         margin: 8px 0;
@@ -134,7 +134,8 @@ input {
         cursor: pointer;
 
         &:hover {
-            background-color: #45a049;
+            color:white;
+            background-color: black;
         }
     }
 }}

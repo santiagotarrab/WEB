@@ -81,7 +81,7 @@ ul {
                 bottom:0px;
                 width:0%;
                 height: 1px;
-                background-color: #00C2CB;   
+                background-color: $color_marca_2; 
                 transition:all 0.5s;
             }
 
@@ -92,7 +92,7 @@ ul {
                 right: 0px;
                 width:0%;
                 height: 1px;
-                background-color: #00C2CB;  
+                background-color: $color_marca_2;
                 transition:all 0.5s;
             }
         }

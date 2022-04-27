@@ -1,4 +1,6 @@
 $responsive_condition : "max-width: 671px";
+$color_marca_1: #e11060;
+$color_marca_2: #00c2cb;
 
 @mixin flex($display,$direction,$horizontal,$vertical,$wrap){   //mixin es como una función que toma variables
     display: $display;
