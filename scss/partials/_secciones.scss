@@ -1,7 +1,7 @@
 
 #nosotros
 {
-    scroll-margin-top: 7em;
+    scroll-margin-top: 4em;
 background-color: #00c2cb9d;  
     .nosotros{
     &__container {
@@ -47,7 +47,7 @@ background-color: #00c2cb9d;
 
 
 #servicios
-{scroll-margin-top: 7em;
+{scroll-margin-top: 4em;
 background-color: white;  
     .servicios{
     &__container {
@@ -82,7 +82,7 @@ background-color: white;
 }
 
 #contacto{
-    scroll-margin-top: 7em;
+    scroll-margin-top: 4em;
 .contacto{
     
     &__container {
@@ -95,7 +95,7 @@ background-color: white;
         &__carrousel{
             width: 50%;
             height: 100%;
-            background-image: url("../img/nosotros1.jpg");
+            background-image: url("../img/contact.png");
             background-size: cover;
             background-repeat: no-repeat;
 
