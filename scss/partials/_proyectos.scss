@@ -49,6 +49,9 @@ PROYECTOS
             * {
                 visibility: visible;
             }
+            h1{
+                color: $color_marca_1;
+            }
 
             &:before {
                 content: '';

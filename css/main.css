@@ -20,6 +20,7 @@ header {
   z-index: 10;
   position: fixed;
   top: 0px;
+  z-index: 2;
 }
 
 .nav {
@@ -206,6 +207,10 @@ ul > li > div:after {
   padding: 0px 100px;
 }
 
+#nosotros .nosotros__container__text h1, #nosotros .nosotros__container__text h2, #nosotros .nosotros__container__text h3 {
+  color: white;
+}
+
 @media (max-width: 671px) {
   #nosotros .nosotros__container__text {
     padding: 0px;
@@ -261,6 +266,10 @@ ul > li > div:after {
 #servicios .servicios__container__text {
   width: 70%;
   padding: 0px 100px;
+}
+
+#servicios .servicios__container__text h1, #servicios .servicios__container__text h2, #servicios .servicios__container__text h3 {
+  color: #00c2cb;
 }
 
 @media (max-width: 671px) {
@@ -428,6 +437,10 @@ PROYECTOS
   visibility: visible;
 }
 
+#proyectos > div:hover h1 {
+  color: #e11060;
+}
+
 #proyectos > div:hover:before {
   content: '';
   position: absolute;
@@ -573,6 +586,17 @@ PRINCIPAL + CARROUSEL
   min-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#index > div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.514);
+  z-index: 1;
 }
 
 /*--------------------------
