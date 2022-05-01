@@ -38,7 +38,23 @@ iframe{
 }
 
 
-
+#whatsapp{
+    width: 30px;
+    height: 30px;
+    position:fixed !important;
+    bottom: 50px !important;
+    right: 10px !important;
+    z-index: 1000;
+    text-decoration: none;
+    font-style: none;
+    
+        color: black;
+    
+    &:hover{
+        color: $color_marca_1;
+        
+    }
+}
 
 /*---------------------------
 PRINCIPAL + CARROUSEL
@@ -48,6 +64,7 @@ $carousel-control-color:             white;
 $carousel-control-width:             15%;
 $carousel-control-opacity:           0.5;
 $carousel-control-hover-opacity:     0.9;
+
 
 
 #index{

@@ -15,12 +15,26 @@
 HEADER+ NAVBAR 
 ---------------------------*/
 header {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.397);
   width: 100%;
   z-index: 10;
   position: fixed;
   top: 0px;
   z-index: 2;
+}
+
+#style-navbar {
+  background-color: black !important;
+  color: #00c2cb;
+}
+
+#style-navbar a {
+  font-size: large;
+  color: white;
+}
+
+#style-navbar a:hover {
+  color: #00c2cb;
 }
 
 .nav {
@@ -109,7 +123,7 @@ ul > li > div * {
 }
 
 ul > li > div:hover * {
-  color: #00C2CB;
+  color: #00c2cb;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -570,6 +584,22 @@ body {
 iframe {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+#whatsapp {
+  width: 30px;
+  height: 30px;
+  position: fixed !important;
+  bottom: 50px !important;
+  right: 10px !important;
+  z-index: 1000;
+  text-decoration: none;
+  font-style: none;
+  color: black;
+}
+
+#whatsapp:hover {
+  color: #e11060;
 }
 
 /*---------------------------
