@@ -211,7 +211,7 @@ PRINCIPAL + CARROUSEL
 #proyectos > div.proyectos-container > div > div.image {
   width: 100px;
   height: 100px;
-  background-image: url("/nosotros1.jpg");
+  background-image: url("../img/nosotros1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50%;
