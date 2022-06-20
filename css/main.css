@@ -78,9 +78,17 @@ GENERALES
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   width: 100vw;
   height: 100vh;
+}
+
+body .bold h1, body .bold h2, body .bold h3 {
+  font-weight: 900;
+}
+
+.spaceTitle {
+  letter-spacing: 10px;
 }
 
 #whatsapp {
@@ -128,7 +136,10 @@ PRINCIPAL + CARROUSEL
           justify-content: center;
   width: 100%;
   height: auto;
-  background-color: rgba(128, 128, 128, 0.397);
+  background-color: black;
+  color: white;
+  padding: 10px 100px;
+  text-align: justify;
 }
 
 #main {

@@ -19,9 +19,24 @@ GENERALES
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+
+  font-family: 'Quicksand', sans-serif;
+  //font-family: 'Roboto', sans-serif;
+
   width: 100vw;
   height: 100vh;
+
+ .bold{
+   h1,h2,h3{
+    //font-weight: bold !important;
+    font-weight: 900;
+ 
+    }
+  }
+}
+
+.spaceTitle{
+  letter-spacing: 10px;
 }
 
 #whatsapp {
@@ -66,8 +81,13 @@ $carousel-control-hover-opacity: 0.9;
     justify-content: center;
     width: 100%;
     height: auto;
-    background-color: $color_fondo_1;
+    background-color: black;
+    color:white;
+    padding: 10px 100px;
+    text-align: justify;
+    
   }
+
 }
 
 #main {
