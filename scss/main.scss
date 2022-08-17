@@ -91,17 +91,18 @@ $carousel-control-hover-opacity: 0.9;
 #main {
   height: 500px;
   width: 100%;
-
+  background-image: url("/img/banner_OBOX.png");;
   position: relative;
 
   div.text1 {
+    font-size: x-large;
     position: absolute;
-    left: 10%;
+    left: 20%;
     top: 10%;
   }
   div.text2 {
     position: absolute;
-    left: 10%;
+    left: 28%;
     top: 40%;
   }
   a {
@@ -201,6 +202,7 @@ $carousel-control-hover-opacity: 0.9;
     align-content: center;
     width: 100%;
     > div.item {
+      
       width: 100%;
       display: flex;
       justify-content: center;
@@ -210,22 +212,37 @@ $carousel-control-hover-opacity: 0.9;
       height: 100px;
 
       >div.PDT-img{
+        padding: 20px;
+        background-color: gray;
+        border-radius: 50%;
         width: 100px;
         height:100px ;
+        
         img{
           width: 100%;
           height: 100%;
         }
+
+        &.fondo-celeste {
+          background-color: $color_marca_2 !important;
+        }
+
       }
 
       > div.text-abs-left {
+        text-align: right;
         position:absolute;
         right: 70%;
       }
 
       > div.text-abs-right {
+        text-align: left;
         position:absolute;
         left:70%;
+        &.celeste{
+          font-weight: bold;
+          color: $color_marca_2;
+        }
       }
     }
   }

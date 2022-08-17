@@ -147,18 +147,20 @@ PRINCIPAL + CARROUSEL
 #main {
   height: 500px;
   width: 100%;
+  background-image: url("/img/banner_OBOX.png");
   position: relative;
 }
 
 #main div.text1 {
+  font-size: x-large;
   position: absolute;
-  left: 10%;
+  left: 20%;
   top: 10%;
 }
 
 #main div.text2 {
   position: absolute;
-  left: 10%;
+  left: 28%;
   top: 40%;
 }
 
@@ -301,6 +303,9 @@ PRINCIPAL + CARROUSEL
 }
 
 #comoTrabajamos .comoTrabajamos-container > div.item > div.PDT-img {
+  padding: 20px;
+  background-color: gray;
+  border-radius: 50%;
   width: 100px;
   height: 100px;
 }
@@ -310,14 +315,25 @@ PRINCIPAL + CARROUSEL
   height: 100%;
 }
 
+#comoTrabajamos .comoTrabajamos-container > div.item > div.PDT-img.fondo-celeste {
+  background-color: #00c2cb !important;
+}
+
 #comoTrabajamos .comoTrabajamos-container > div.item > div.text-abs-left {
+  text-align: right;
   position: absolute;
   right: 70%;
 }
 
 #comoTrabajamos .comoTrabajamos-container > div.item > div.text-abs-right {
+  text-align: left;
   position: absolute;
   left: 70%;
+}
+
+#comoTrabajamos .comoTrabajamos-container > div.item > div.text-abs-right.celeste {
+  font-weight: bold;
+  color: #00c2cb;
 }
 
 #proyectos {
