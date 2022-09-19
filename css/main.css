@@ -71,8 +71,6 @@ GENERALES
 ---------------------------
 */
 * {
-  margin: 0;
-  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -91,6 +89,12 @@ body .bold h3 {
 
 .spaceTitle {
   letter-spacing: 10px;
+}
+
+@media (max-width: 950px) {
+  .spaceTitle {
+    letter-spacing: 2px;
+  }
 }
 
 #whatsapp {
@@ -144,24 +148,33 @@ PRINCIPAL + CARROUSEL
   text-align: justify;
 }
 
+@media (max-width: 950px) {
+  #nosotros > div {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
 #main {
   height: 500px;
   width: 100%;
   background-image: url("/img/banner_OBOX.png");
-  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
 }
 
-#main div.text1 {
-  font-size: x-large;
-  position: absolute;
-  left: 20%;
-  top: 10%;
-}
-
-#main div.text2 {
-  position: absolute;
-  left: 28%;
-  top: 40%;
+#main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #main a {
@@ -169,9 +182,8 @@ PRINCIPAL + CARROUSEL
 }
 
 #main a div.link-portfolio {
-  position: absolute;
-  left: 10%;
-  top: 60%;
+  display: none;
+  background-color: white;
 }
 
 #main div.imagen {
@@ -190,6 +202,17 @@ PRINCIPAL + CARROUSEL
 #carousel div {
   width: 100%;
   height: 600px;
+}
+
+#servicios h5 {
+  padding: 0px 10%;
+}
+
+@media (max-width: 950px) {
+  #servicios h5 {
+    width: 100%;
+    padding: 10px;
+  }
 }
 
 #servicios .servicios-title {
@@ -250,7 +273,7 @@ PRINCIPAL + CARROUSEL
 @media (max-width: 950px) {
   #servicios div.servicios-container > div {
     width: 100%;
-    padding: 0 150px;
+    padding: 0 10%;
   }
 }
 
@@ -262,7 +285,7 @@ PRINCIPAL + CARROUSEL
   font-weight: 900;
   color: white;
   background-color: black;
-  padding: 100px 0px;
+  padding: 50px 0px;
 }
 
 #comoTrabajamos .comoTrabajamos-container {
@@ -322,13 +345,25 @@ PRINCIPAL + CARROUSEL
 #comoTrabajamos .comoTrabajamos-container > div.item > div.text-abs-left {
   text-align: right;
   position: absolute;
-  right: 70%;
+  right: 60%;
+}
+
+@media (max-width: 950px) {
+  #comoTrabajamos .comoTrabajamos-container > div.item > div.text-abs-left {
+    right: 70%;
+  }
 }
 
 #comoTrabajamos .comoTrabajamos-container > div.item > div.text-abs-right {
   text-align: left;
   position: absolute;
-  left: 70%;
+  left: 60%;
+}
+
+@media (max-width: 950px) {
+  #comoTrabajamos .comoTrabajamos-container > div.item > div.text-abs-right {
+    left: 70%;
+  }
 }
 
 #comoTrabajamos .comoTrabajamos-container > div.item > div.text-abs-right.celeste {
@@ -337,6 +372,7 @@ PRINCIPAL + CARROUSEL
 }
 
 #proyectos {
+  display: none;
   text-align: center;
 }
 
@@ -431,9 +467,30 @@ PRINCIPAL + CARROUSEL
 FOOTER
 ---------------------------*/
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  justify-items: center;
+  flex-direction: row;
   background-color: black;
   overflow: hidden;
   height: 50px;
   width: 100%;
+  padding: 50px;
+}
+
+footer div.footer-item {
+  height: 100px;
+  width: 100px;
+  background-color: #14a529;
 }
 /*# sourceMappingURL=main.css.map */
